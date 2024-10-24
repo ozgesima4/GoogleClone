@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+}
+.header{
+    display: flex;
+    justify-content:space-between; 
+    padding: 10px 30px;   /*üste ve birbirlerine yakınlığı belirtir*/
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+    height: 100vh;
+}
+.header a{
+   text-decoration: inherit;  /*altındaki çizgiyi yook eder*/
+   font-size: 15px;
+   margin-right: 20px; /*aralarındaki boşluğu ayarla*/
+   color: black;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.header_right{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+
+}
+.header_apps{
+    margin-right: 10px;
+}
+.main{
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px; /*ana ksımın üste üzaklığı*/
+   flex: 1px;
+   align-items: center;
+}
+.main img{
+    height: 100px;
+    object-fit:contain; /* resimi orantılama işlemi*/
+}
+.search_input{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(163, 161, 161);
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vh;
+   margin-top: 25px;
+   max-width: 400px;
+}
+.search_input input{
+    padding: 10px 20px;
+    border: none;
+    flex:1px;
+    outline: none;
+}
+.search_input .material-symbols-outlined{
+    color: rgb(204, 204, 204);
+}
+.search_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.search_button button{
+    background-color: rgb(207, 207, 207);
+    border: none;
+    margin: 2px;  /*buttonların birbirine olan mesafesi*/
+    padding: 10px 20px;  /*buttonların yükseklik ve uzunluk*/
+    cursor: pointer;
+    
+    
+}
